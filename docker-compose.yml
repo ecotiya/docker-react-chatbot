@@ -4,6 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    container_name: react
     volumes:
       - ./:/usr/src/app
     command: sh -c "cd react-app && yarn start"
