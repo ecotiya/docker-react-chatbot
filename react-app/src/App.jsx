@@ -40,6 +40,10 @@ export default class App extends React.Component {
         setTimeout(() => this.displayNextQuestion(nextQuestionId), 500);
         break;
 
+      case (nextQuestionId === 'contact'):
+        this.handleClickOpen();
+        break;
+
       case /^https:*/.test(nextQuestionId):
         {
         const a = document.createElement('a');
