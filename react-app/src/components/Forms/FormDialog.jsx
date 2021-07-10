@@ -33,20 +33,20 @@ export default class FormDialog extends React.Component {
   }
 
   submitForm = () => {
-    const name = this.state.name;
-    const email = this.state.email;
-    const description = this.state.description;
+    let name = this.state.name;
+    let email = this.state.email;
+    let description = this.state.description;
 
     // バリデーションチェック
 
-    const payload = {
+    let payload = {
         text: 'お問い合わせがありました。\n' +
               'お名前：' + name + '\n' +
               'メールアドレス：' + email + '\n' +
               '問い合わせ内容：\n'  + description + '\n'
     }
 
-    const url = "";
+    let url = "";
 
     fetch(url, {
       method: 'POST',

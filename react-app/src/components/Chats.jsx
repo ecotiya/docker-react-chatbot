@@ -3,7 +3,7 @@ import List from '@material-ui/core/List';
 import {Chat} from './index'
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles(() => (
+let useStyles = makeStyles(() => (
     createStyles({
       "chats": {
           height: 400,
@@ -14,8 +14,8 @@ const useStyles = makeStyles(() => (
   ),
 );
 
-const Chats = (props) => {
-  const classes = useStyles();
+let Chats = (props) => {
+  let classes = useStyles();
 
   return (
     <List className={classes.chats} id={"scroll-area"}>

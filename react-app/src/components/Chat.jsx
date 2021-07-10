@@ -5,9 +5,9 @@ import Avatar from '@material-ui/core/Avatar';
 import Onushi from '../assets/img/onushi.jpg'
 import Ecotiya from '../assets/img/ecotiya.jpg'
 
-const Chat = (props) => {
-  const isQuestion = (props.type === 'question');
-  const classes = isQuestion ? 'p-chat__row' : 'p-chat__reverse';
+let Chat = (props) => {
+  let isQuestion = (props.type === 'question');
+  let classes = isQuestion ? 'p-chat__row' : 'p-chat__reverse';
 
   return (
     <ListItem className = {classes}>

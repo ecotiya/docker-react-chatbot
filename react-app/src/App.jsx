@@ -21,7 +21,7 @@ export default class App extends React.Component {
   }
 
   displayNextQuestion = (nextQuestionId) => {
-    const chats = this.state.chats;
+    let chats = this.state.chats;
     chats.push({
       text : this.state.dataset[nextQuestionId].question,
       type : 'question'
@@ -46,7 +46,7 @@ export default class App extends React.Component {
 
       case /^https:*/.test(nextQuestionId):
         {
-        const a = document.createElement('a');
+        let a = document.createElement('a');
         a.href = nextQuestionId;
         a.target = '_blank';
         a.click();
@@ -55,7 +55,7 @@ export default class App extends React.Component {
 
       default:
         {
-        const chats = this.state.chats;
+        let chats = this.state.chats;
         chats.push({
             text : selectedAnswer,
             type : 'answer'
@@ -80,12 +80,12 @@ export default class App extends React.Component {
   };
 
   componentDidMount() {
-    const initAnswer = "";
+    let initAnswer = "";
     this.selectAnswer(initAnswer, this.state.currentId);
   }
 
   componentDidUpdate() {
-    const scrollArea = document.getElementById('scroll-area')
+    let scrollArea = document.getElementById('scroll-area')
     if (scrollArea) {
       scrollArea.scrollTop = scrollArea.scrollHeight;
     }
