@@ -2,7 +2,7 @@ import React from 'react'
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
-let useStyles = makeStyles(() =>
+const useStyles = makeStyles(() =>
   createStyles({
     "button": {
       borderColor: '#00ff7f',
@@ -17,7 +17,7 @@ let useStyles = makeStyles(() =>
   }),
 );
 
-let Answer = (props) => {
+const Answer = (props) => {
   let classes = useStyles();
   return (
     <Button

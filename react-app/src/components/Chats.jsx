@@ -3,7 +3,7 @@ import List from '@material-ui/core/List';
 import {Chat} from './index'
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 
-let useStyles = makeStyles(() => (
+const useStyles = makeStyles(() => (
     createStyles({
       "chats": {
           height: 400,
@@ -14,7 +14,7 @@ let useStyles = makeStyles(() => (
   ),
 );
 
-let Chats = (props) => {
+const Chats = (props) => {
   let classes = useStyles();
 
   return (

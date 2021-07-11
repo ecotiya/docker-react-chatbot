@@ -5,7 +5,7 @@ import Avatar from '@material-ui/core/Avatar';
 import Onushi from '../assets/img/onushi.jpg'
 import Ecotiya from '../assets/img/ecotiya.jpg'
 
-let Chat = (props) => {
+const Chat = (props) => {
   let isQuestion = (props.type === 'question');
   let classes = isQuestion ? 'p-chat__row' : 'p-chat__reverse';
 
