@@ -11,4 +11,4 @@ const AnswersList = (props) => {
     )
 }
 
-export default AnswersList
+export default AnswersList;

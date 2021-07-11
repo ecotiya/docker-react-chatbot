@@ -65,7 +65,7 @@ const App = () => {
   },[]);
 
   useEffect(() => {
-    let scrollArea = document.getElementById('scroll-area')
+    let scrollArea = document.getElementById('scroll-area');
     if (scrollArea) {
       scrollArea.scrollTop = scrollArea.scrollHeight;
     }
@@ -82,4 +82,4 @@ const App = () => {
   );
 }
 
-export default App
+export default App;
