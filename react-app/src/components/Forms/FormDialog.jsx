@@ -66,7 +66,7 @@ const FormDialog = (props) => {
         headers: { 'Content-Type': 'application/json; charset=utf-8' },
         body: JSON.stringify(payload)
       }).then(() => {
-        alert('送信が完了いたしました。連絡いたしますのでお待ちください。')
+        alert('送信が完了いたしました。連絡いたしますのでお待ちください。');
         setName("");
         setEmail("");
         setDescription("");

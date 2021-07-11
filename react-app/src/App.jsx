@@ -21,7 +21,7 @@ const App = () => {
     setCurrentId(nextQuestionId);
   }
 
-  const selectAnswer = (selectedAnswer, nextQuestionId) => {
+  const selectAnswer = useCallback((selectedAnswer, nextQuestionId) => {
     switch (nextQuestionId) {
       case 'contact':
         handleClickOpen();
@@ -43,7 +43,7 @@ const App = () => {
         setTimeout(() => displayNextQuestion(nextQuestionId, dataset[nextQuestionId]), 500);
         break;
     }
-  }
+  },[answers]);
 
   const addChats = (chat) => {
     setChats(prevChats => {
